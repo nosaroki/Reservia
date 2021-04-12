@@ -1,32 +1,103 @@
+/* HEADER */
+
 header
 {
-width: 100%
-}
-
-.uneimage
-{
-  width: 100px;
+display: flex;
+justify-content: space-between;
 }
 
 header>menu
 {
   float: right;
   list-style: none;
+  margin: 0;
+  padding: 1em 2em;
 }
 
 header>menu>li
 {
   float: left;
-  
 }
 
 header>menu>li>a
 {
+  display: block;
   padding: 1em;
   color: blue;
+  text-decoration: none;
 }
 
 header>menu>li>a:hover
 {
-  border-top: 1px solid blue;
+  display: block;
+  border-top: 1px solid #1100FF;
+}
+
+html,body 
+{
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+.active>a
+{
+  color: silver;
+}
+
+/* MAIN RECHERCHE */
+
+div>.filtres
+{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75%;
+}
+
+/* HÉBERGEMENTS */
+
+div.leftbox
+{
+  list-style: none;
+  display: flex;
+  width: 66%;
+  flex-wrap: wrap;
+}
+
+div.rightbox
+{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+/* ACTIVITÉS */
+
+
+/* FOOTER */
+
+footer
+{
+  width: 100%;
+  margin: 2px 1px;
+  background-color: #F2F2F2;
+}
+
+footer>h3
+{
+  float: left;
+  padding: 1em;
+ 
+}
+
+footer>div>ul>li
+{
+  float: left;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-between;
+  
 }

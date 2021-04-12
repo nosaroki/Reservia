@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
+
+    <html lang="en">
+
+       <head>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-        <title>OpenClassrooms Projet 2</title>
+        
+            <title>OpenClassrooms Projet 2</title>
+
+      <link rel="styles.css" href="styles.css">
       
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet"/> 
-    </head>
+      
+        <script src="https://kit.fontawesome.com/71444e5b5d.js" crossorigin="anonymous"></script>
+    
+      </head>
     <body class="main">
         <!-- HEADER -->
          <header>
-
-    <!-- LOGO-->
-
-             <div>
+            
                 <img src="P2_Reservia/images/logo/Reservia.svg" alt="logo de Reservia">
-            </div>
-
-    <!--NAVIGATION-->
                     <menu>
                          <li><a href="#">Hébergement</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a href="#">S'inscrire</a></li>
+                         <li class="active"><a href="#">Activités</a></li>
+                         <li><a href="#"><strong>S'inscrire</strong></a></li>
             
                      </menu>
-                
-                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                 <p>En plein centre ville ou en pleine nature</p>
             
         </header>
 
@@ -35,6 +35,9 @@
 
         <nav> 
  
+           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                 <p>En plein centre ville ou en pleine nature</p>
+          
             <div>
               <span></span>
               <input type="" value="" placeholder="Marseille, France"/>
@@ -42,27 +45,27 @@
             </div>
           </nav>
       
-            <div class="Filtres et contenus">
+            <div>
               <h2>Filtres</h2>
          
-              <p1>
-                <div class="filtres">
+          <ul class="filtres">
+                <li class="">
                 <p>Économique</p>
-              </div>
+              </li>
               
-              <div class="">
+              <li class="">
                 <p>Familial</p>
-              </div>
+              </li>
               
-              <div class="">
+              <li class="">
                 <p>Romantique</p>
-              </div>
+              </li>
               
-              <div class="">
-                <p>Animaux domestiques</p>
-              </div>
-              
-              </p1>
+              <li class="">
+                <p>Animaux autorisés</p>
+              </li>
+         
+          </ul>
       
               <span></span>
               <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -71,22 +74,22 @@
         
         <!-- HEBERGEMENTS -->
       
-          <div class="content">
-            <div class="leftbox"
-                <h3>Hébergements à Marseille</h3>
+          <div id="content" class="les_herbergements">
+            <div class="leftbox">
+            <h3>Hébergements à Marseille</h3>
             <ul>
               
-              <li a=href"aubergedelacannebière.jpg"><img src="image/auberge_mini.jpg" alt="Photo Auberge" title="Auberge de la cannebière"</li>
+              <li a=href"imageaubergecannebière.jpg"><img src="image/auberge_mini.jpg" alt="Photo Auberge" title="Auberge de la cannebière"</li>
                
-               <li a=href"hotelduport.jpg"><img src="desktop/github/OCRP2/P2_Reservia/images/hebergements/S/aubergedelacannebiere.jpg" alt="Hôtel du port" title="Hôtel du port"</li>
+               <li a=href"imagehotelduport.jpg"><img src="imagecannebiere.jpg" alt="Hôtel du port" title="Hôtel du port"</li>
                  
-               <li a=href"hotellesmouettes.jpg"><img src="image/auberge_mini.jpg" alt="Hôtel les mouettes" title="Hôtel les mouettes"</li>
+               <li a=href"imagehotellesmouettes.jpg"><img src="image/auberge_mini.jpg" alt="Hôtel les mouettes" title="Hôtel les mouettes"</li>
                   
-               <li a=href"hoteldelamer.jpg"><img src="image/auberge_mini.jpg" alt="Hôtel de la mer" title="Hôtel de la mer"</li> 
+               <li a=href"imagehoteldelamer.jpg"><img src="image/auberge_mini.jpg" alt="Hôtel de la mer" title="Hôtel de la mer"</li> 
               
-              <li a=href"aubergelepanier.jpg"><img src="image/auberge_mini.jpg" alt="Auberge le panier" title="Auberge le panier"</li>
+              <li a=href"imageaubergelepanier.jpg"><img src="image/auberge_mini.jpg" alt="Auberge le panier" title="Auberge le panier"</li>
                 
-              <li a=href"chezamina.jpg"><img src="image/auberge_mini.jpg" alt="Hôtel chez Amina" title="Hôtel chez Amina"</li>
+              <li a=href"imagehotelchezAmina.jpg"><img src="image/auberge_mini.jpg" alt="Hôtel chez Amina" title="Hôtel chez Amina"</li>
                 
               </div>
                   
@@ -115,7 +118,7 @@
       
         <!-- ACTIVITÉS -->
               
-              <div class="lowerbox">
+              <div id="activites" class="lowerbox">
             <h3>Activités à Marseille</h3>
                 
                 <li a=href"imagevieuxport.jpg"><img src="image/auberge_mini.jpg" alt="Vieux port" title="Vieux port"</li>
@@ -135,8 +138,7 @@
               
         <!-- FOOTER -->
         <footer>
-          
-          <div class="Footer">
+         
           
           <h3>À propos</h3>
           
@@ -166,7 +168,6 @@
             
              </ul>
             
-          </div>
               
         </footer>
         
