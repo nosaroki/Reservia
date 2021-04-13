@@ -1,18 +1,10 @@
-<ul>
-                <li class="filtres">
-                <p>Économique</p>
-              </li>
+  <ul>
               
-              <li class="">
-                <p>Familial</p>
-              </li>
-              
-              <li class="">
-                <p>Romantique</p>
-              </li>
-              
-              <li class="">
-                <p>Animaux domestiques</p>
-              </li>
-         
-</ul>
+<li><a=href"imageaubergedelacannebière.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/aubergedelacannebière.jpg" alt="Auberge de la cannebière" title=" Photo de l'Auberge de la cannebière"</a></li>
+<li><a=href"imagehotelduport.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/hotelduport.jpg" alt="Hôtel du port" title="Hôtel du port"</a></li>
+<li a=href"imagehotellesmouettes.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/hotellesmouettes.jpg" alt="Hôtel les mouettes" title="Hôtel les mouettes"</li>
+<li a=href"imagehoteldelamer.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/hoteldelamer.jpg" alt="Hôtel de la mer" title="Hôtel de la mer"</li> 
+<li a=href"imageaubergelepanier.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/aubergelepanier.jpg" alt="Auberge le panier" title="Auberge le panier"</li>
+<li a=href"imagehotelchezAmina.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/chezamina.jpg" alt="Hôtel chez Amina" title="Hôtel chez Amina"</li>
+                
+                    </ul>

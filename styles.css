@@ -44,9 +44,46 @@ html,body
   color: silver;
 }
 
+nav>p
+{
+  color: #595959;
+}
+
+nav>div
+{
+  border-width: 1px;
+  border-color: #E6E6E6;
+  border-style: solid;
+  border-radius: 10px;
+  display: flex;
+  
+}
+
+div>
+{
+  background: pink;
+}
+
+div>input
+{
+  border-color: #E6E6E6;
+}
+
+div>.bouton
+{
+  color: #FFFFFF;
+  border-width: 1px;
+  border-color: #E6E6E6;
+  border-style: solid;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #0365FC;
+  text-decoration: none;
+  padding: 8px
+}
+
 /* MAIN RECHERCHE */
 
-div>.filtres
+.filtres
 {
   list-style: none;
   display: flex;
