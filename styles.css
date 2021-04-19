@@ -1,3 +1,9 @@
+body
+{
+    padding-top: 1.5em;
+}
+
+
 /* HEADER */
 
 header
@@ -23,14 +29,14 @@ header>menu>li>a
 {
   display: block;
   padding: 1em;
-  color: blue;
+  color:#0065FC;
   text-decoration: none;
 }
 
 header>menu>li>a:hover
 {
   display: block;
-  border-top: 1px solid #1100FF;
+  border-top: 1px solid #0065FC;
 }
 
 html,body 
@@ -41,47 +47,69 @@ html,body
 
 .active>a
 {
-  color: silver;
+  color: #595959;
 }
 
-nav>p
+body>nav>p
 {
   color: #595959;
 }
 
-nav>div
+body>nav>div
 {
+    width: fit-content;
   border-width: 1px;
   border-color: #E6E6E6;
   border-style: solid;
   border-radius: 10px;
   display: flex;
-  
-}
-
-div>
-{
-  background: pink;
-}
-
-div>input
-{
-  border-color: #E6E6E6;
 }
 
 div>.bouton
 {
-  color: #FFFFFF;
-  border-width: 1px;
-  border-color: #E6E6E6;
-  border-style: solid;
-  border-radius: 0px 10px 10px 0px;
-  background-color: #0365FC;
-  text-decoration: none;
-  padding: 8px
+    color: #FFFFFF;
+    border-width: 1px;
+    border-color: #E6E6E6;
+    border-style: solid #0065fc;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0365FC;
+    text-decoration: none;
+    padding: 23px;
 }
 
-/* MAIN RECHERCHE */
+
+
+.input_filtre>span>i
+{
+    line-height:2em;
+    padding:1em;
+    background-color: #F2F2F2;
+    color: #000;
+    border-radius: 10px 0px 0px 10px;
+}
+.input_filtre>a
+{
+    line-height: 3em;;
+}
+
+.input_filtre>input
+{
+   color: black;
+   border: none;
+
+}
+
+/* MAIN RECHERCHE + FILTRES */
+
+#allfilters
+{
+  display:flex;
+}
+
+.textfiltre
+{
+    margin-top: 28px;
+}
 
 .filtres
 {
@@ -90,51 +118,304 @@ div>.bouton
   flex-direction: row;
   justify-content: space-around;
   width: 75%;
+  align-content: flex-start;
+  margin-left: -30px;
 }
+
+.filtres>li
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid #deebff;
+    border-radius: 2em;
+    margin: 0.5em;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.filtres>li>i
+{
+    padding: 0.5em;
+    color: #0065fc;
+    background-color: #deebff;
+    border: 2px solid #deebff;
+    border-radius:2em;
+}
+
+.filtres>li>span
+{
+    padding: 0 1em;
+}
+
+.pointinfo
+{
+    display: flex;
+    align-items: center; 
+}
+
+.pointinfo i
+{
+    display: block;
+    width: 13px;
+    height: 13px;
+    text-align: center;
+}
+
+.pointinfo>span>i
+{
+    padding: 0.5em;
+    color: #0065FC;
+    border:1px solid #F2F2F2;
+    border-radius: 1em;
+    margin: 0.5em;
+}
+
+.pointinfo>h4
+{
+    font-weight: normal;
+    color: #8a8686;
+}
+
 
 /* HÉBERGEMENTS */
 
-div.leftbox
+#content
 {
-  list-style: none;
-  display: flex;
-  width: 66%;
-  flex-wrap: wrap;
+    display:flex;
+    margin: 2em;
 }
 
-div.rightbox
+.titrehebergement
 {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  width: 33%;
+    display: flex;
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+
+.hebergements_boxes
+{
+    display: flex;
+    list-style: none;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: space-between;
+   width: 70%;
+   flex-wrap: wrap;
+   margin-right: 50px;
+   margin-top: 0px;
+   padding: 2em;
+}
+
+.hebergements_boxes>li
+{
+    background-color: white;
+    border: solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    width: 30%;
+    box-shadow: 0px 0px 6px 3px #d8d7dd;
+    cursor: pointer;
+}
+
+ul.hebergements_boxes>li img
+{
+    width: 100%;
+    border-radius: 10px;
+    margin: 1px;
+}
+
+.pop
+{
+    float: right;
+}
+
+#lpp
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* .populaires
+{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 10%;
+} */
+
+.rightbox
+{
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.rightbox>ul
+{
+    padding: 0px;
+}
+
+
+.lespluspopulaires>li 
+{
+    list-style: none;
+    background-color: white;
+    border: solid white;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 6px 3px #d8d7dd;
+    display: flex;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+}
+
+ul.lespluspopulaires>li img
+{
+    width: 100px;
+    border-radius: 10px 0px 0px 10px;
+    margin: 1px;
+
+}
+
+/* LES ÉTOILES */
+
+.full
+{
+    color: #0065fc;
+}
+
+.simple
+{
+    color: #F2F2F2;
+}
+
+.showmore
+{
+    display: flex;
+    text-align: left;
+    margin-right: 75%;
 }
 
 /* ACTIVITÉS */
 
+#activites>ul>li
+{
+    background-color: white;
+    border: solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    width: 30%;
+    box-shadow: 0px 0px 6px 3px #d8d7dd;
+}
+
+li>img
+{
+    width: 340px;
+    align-content: space-between;
+    
+}
+
+
+#activites>ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    align-content: space-between;
+}
+ 
+.vieuxport
+{
+    margin: auto;
+}
+
+.pomeguesfrioul
+{
+    margin: auto;
+}
+
+.calanques
+{
+    margin: auto;
+}
+
+.nddlglongchamp
+{
+    margin: auto;
+}
 
 /* FOOTER */
 
 footer
 {
   width: 100%;
-  margin: 2px 1px;
+  height: 100%;
   background-color: #F2F2F2;
+
 }
 
-footer>h3
+.footerbloc
 {
-  float: left;
-  padding: 1em;
- 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2em;
+    margin-left: -7em;
+
 }
 
 footer>div>ul>li
 {
-  float: left;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-between;
-  
+    list-style: none;
+}
+
+.footer_link:hover
+{
+    color: #0065FC;
+}
+
+.footer_link
+{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.apropos
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hebergements>h3
+{
+    margin-top: auto;
+}
+
+.hebergements
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.assistance>h3
+{
+    margin-top: auto;
+}
+
+.assistance
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }

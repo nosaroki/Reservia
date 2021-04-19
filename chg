@@ -1,10 +1,29 @@
-  <ul>
-              
-<li><a=href"imageaubergedelacannebière.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/aubergedelacannebière.jpg" alt="Auberge de la cannebière" title=" Photo de l'Auberge de la cannebière"</a></li>
-<li><a=href"imagehotelduport.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/hotelduport.jpg" alt="Hôtel du port" title="Hôtel du port"</a></li>
-<li a=href"imagehotellesmouettes.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/hotellesmouettes.jpg" alt="Hôtel les mouettes" title="Hôtel les mouettes"</li>
-<li a=href"imagehoteldelamer.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/hoteldelamer.jpg" alt="Hôtel de la mer" title="Hôtel de la mer"</li> 
-<li a=href"imageaubergelepanier.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/aubergelepanier.jpg" alt="Auberge le panier" title="Auberge le panier"</li>
-<li a=href"imagehotelchezAmina.jpg"><img src="OCRP2/P2_Reservia/images/hebergements/S/chezamina.jpg" alt="Hôtel chez Amina" title="Hôtel chez Amina"</li>
-                
-                    </ul>
+.hebergements_boxes
+{
+    display: flex;
+    list-style: none;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    justify-content: space-between;
+   width: 70%;
+   flex-wrap: wrap;
+   margin-right: 50px;
+}
+
+.hebergements_boxes>li 
+{
+    background-color: white;
+    border: solid white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 2px;
+    width: 30%;
+}
+
+ul.hebergements_boxes>li img
+{
+    width: 100%;
+    border-radius: 10px;
+    margin: 1px;
+}
