@@ -1,7 +1,15 @@
 body
 {
     padding-top: 1.5em;
+    margin: 0px;
 }
+
+
+header, nav, #allfilters, .pointinfo
+{
+    margin-left: 30px;
+}
+    
 
 
 /* HEADER */
@@ -74,15 +82,21 @@ div>.bouton
     border-radius: 0px 10px 10px 0px;
     background-color: #0365FC;
     text-decoration: none;
-    padding: 23px;
+    padding: 19px;
+    padding-top: 21px;
+    margin-left: 61px;
 }
 
-
+.input_filtre
+{
+    height: 57px;
+    width: 450px;
+}
 
 .input_filtre>span>i
 {
     line-height:2em;
-    padding:1em;
+    padding: 13px;
     background-color: #F2F2F2;
     color: #000;
     border-radius: 10px 0px 0px 10px;
@@ -96,7 +110,9 @@ div>.bouton
 {
    color: black;
    border: none;
-
+   font-weight: bold;
+   font-size: 18px;
+    padding-left: 10px;
 }
 
 /* MAIN RECHERCHE + FILTRES */
@@ -224,7 +240,7 @@ div>.bouton
 ul.hebergements_boxes>li img
 {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     margin: 1px;
 }
 
@@ -271,7 +287,7 @@ ul.hebergements_boxes>li img
     width: 100%;
     box-shadow: 0px 0px 6px 3px #d8d7dd;
     display: flex;
-    margin-bottom: 1.5em;
+    margin-bottom: 5.5em;
     cursor: pointer;
 }
 
@@ -280,7 +296,24 @@ ul.lespluspopulaires>li img
     width: 100px;
     border-radius: 10px 0px 0px 10px;
     margin: 1px;
+}
 
+.contentaside
+{
+    margin-left: 20px;
+}
+
+
+.contentaside>h4
+{
+    margin: 0px;
+    margin-top: 10px;
+}
+.contentaside>p
+{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 14px;
 }
 
 /* LES ÉTOILES */
@@ -307,12 +340,10 @@ ul.lespluspopulaires>li img
 #activites>ul>li
 {
     background-color: white;
-    border: solid white;
-    border-radius: 10px;
     padding: 5px;
     margin: 2px;
     width: 30%;
-    box-shadow: 0px 0px 6px 3px #d8d7dd;
+   
 }
 
 li>img
@@ -321,7 +352,6 @@ li>img
     align-content: space-between;
     
 }
-
 
 #activites>ul
 {
@@ -332,24 +362,33 @@ li>img
     align-content: space-between;
 }
  
-.vieuxport
+.vieuxport, .pomegues, .frioul, .calanques, .nddlg, .longchamp
 {
     margin: auto;
+    border: solid transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 3px #d8d7dd;
+}
+
+.vieuxport
+{
+margin: 0px;
+height: 25%;
 }
 
 .pomeguesfrioul
 {
-    margin: auto;
+
 }
 
 .calanques
 {
-    margin: auto;
+
 }
 
 .nddlglongchamp
 {
-    margin: auto;
+
 }
 
 /* FOOTER */
@@ -366,9 +405,10 @@ footer
 {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 2em;
-    margin-left: -7em;
+    justify-content: space-evenly;
+    margin: 0em;
+    margin-left: -12em;
+    height: 200px;
 
 }
 
@@ -394,6 +434,7 @@ footer>div>ul>li
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    margin-top: 0px;
 }
 
 .hebergements>h3
