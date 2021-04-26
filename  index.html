@@ -22,7 +22,7 @@
 
     <header>
 
-        <img src="P2_Reservia/logo/Reservia.svg" alt="logo de Reservia">
+        <div><img class="reservia" src="P2_Reservia/logo/Reservia.svg" alt="logo de Reservia"></div>
         <menu>
             <li><a href="#">Hébergements</a></li>
             <li class="active"><a href="#">Activités</a></li>
@@ -43,7 +43,8 @@
 
                 <span><i class="fas fa-map-marker-alt"></i></span>
                 <input type="" value="" placeholder="Marseille, France" />
-                <a href="#" class="bouton">Rechercher</a>
+                <a href="" class="bouton">Rechercher</a>
+                <a href="" class="bouton_min"><i class="fas fa-search"></i></a>
             </div>
         </div>
 
@@ -56,23 +57,23 @@
 
         <ul class="filtres">
 
-            <li>
+            <li class="eco">
                 <i class="fas fa-money-bill-wave"></i>
                 <span>Économique</span>
             </li>
 
 
-            <li>
+            <li class="fam">
                 <i class="fas fa-child"></i>
                 <span>Familial</span>
             </li>
 
-            <li>
+            <li class="love">
                 <i class="fas fa-heart"></i>
                 <span>Romantique</span>
             </li>
 
-            <li>
+            <li class="animals">
                 <i class="fas fa-dog"></i>
                 <span>Animaux autorisés</span>
             </li>
@@ -99,89 +100,95 @@
 
             <li><img src="P2_Reservia/images_hebergements/S/aubergedelacannebiere.jpg" alt="Auberge de la cannebière"
                     title=" Photo de l'Auberge de la cannebière" height="150px">
-                <div>
+                <div class="content_heb">
                     <h4>Auberge de la Cannebière</h4>
                     <p>Nuit à partir de <strong>25€</strong></p>
                     
+                    <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star simple"></i>
-                    
+                    </div>
                 </div>
             </li>
 
             <li><img src="P2_Reservia/images_hebergements/S/hotelduport.jpg" alt="Hôtel du port" title="Hôtel du port"
                     height="150px">
-                <div>
+                <div class="content_heb">
                     <h4>Hôtel du port</h4>
                     <p>Nuit à partir de <strong>52€</strong></p>
                     
+                    <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
-                    
+                    </div>
                 </div>
             </li>
 
             <li><img src="P2_Reservia/images_hebergements/S/hotellesmouettes.jpg" alt="Hôtel les mouettes"
                     title="Hôtel les mouettes" height="150px">
-                <div>
+                <div class="content_heb">
                     <h4>Hôtel Les mouettes</h4>
                     <p>Nuit à partir de <strong>76€</strong></p>
                     
+                    <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star simple"></i>
-                   
+                   </div>
                 </div>
             </li>
 
             <li><img src="P2_Reservia/images_hebergements/S/hoteldelamer.jpg" alt="Hôtel de la mer"
                     title="Hôtel de la mer" height="150px">
-                <div>
+                <div class="content_heb">
                     <h4>Hôtel de la mer</h4>
                     <p>Nuit à partir de <strong>46€</strong></p>
                     
+                    <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star simple"></i>
                         <i class="fas fa-star simple"></i>
-                    
+                    </div>
                 </div>
             </li>
             <li><img src="P2_Reservia/images_hebergements/S/aubergelepanier.jpg" alt="Auberge le panier"
                     title="Auberge le panier" height="150px">
-                <div>
+                <div class="content_heb">
                     <h4>Auberge Le Panier</h4>
                     <p>Nuit à partir de <strong>23€</strong></p>
                     
+                    <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star simple"></i>
-                    
+                    </div>
                 </div>
             </li>
             <li><img src="P2_Reservia/images_hebergements/S/chezamina.jpg" alt="Hôtel chez Amina"
                     title="Hôtel chez Amina" height="150px">
-                <div>
+                <div class="content_heb">
                     <h4>Hôtel chez Amina</h4>
                     <p>Nuit à partir de <strong>96€</strong></p>
                     
+                    <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
-                    
+                    </div>
                 </div>
             </li>
 
@@ -272,8 +279,7 @@
                     </div>
                 </li>
 
-         <div class="pomefrioul">
-                <li><img class="small" src="P2_Reservia/images_activites/pomegues_M.jpg" alt="Fort de Pomègues"
+                <li class="small fort"><img src="P2_Reservia/images_activites/pomegues_M.jpg" alt="Fort de Pomègues"
                             title="Fort de Pomègues">
                         <div>
                             <h4>Fort de Pomègues</h4>
@@ -281,14 +287,13 @@
                 </li>
 
                 
-                    <li><img class="small" src="P2_Reservia/images_activites/frioul_M.jpg" alt="Îles du Frioul"
-                            title="Îles du Frioul">
-                        <div>
-                            <h4>Îles du Frioul</h4>
-                        </div>
-                    </li>
+                <li class="small frioul"><img src="P2_Reservia/images_activites/frioul_M.jpg" alt="Îles du Frioul"
+                        title="Îles du Frioul">
+                    <div>
+                        <h4>Îles du Frioul</h4>
+                    </div>
+                </li>
                 
-                </div>
           
                 <li><img class="big" src="P2_Reservia/images_activites/calanques_M.jpg" alt="Parc National des Calanques"
                         title="Parc National des Calanques">
@@ -298,21 +303,24 @@
                 </li>
             
 
+<!-- JAI CHANGER LA CLASSE small, 
+    je l'ai mis sur le <li/> au lieu de l'image, 
+    etjai mis 100% au lieu de ce que tu avcais défini(40%) 
+-->
+                <li class="small nddlg"><img src="P2_Reservia/images_activites/NDDLG_M.jpg" alt="Notre-Dame-de-la-Garde"
+                        title="Notre-Dame-de-la-Garde">
+                    <div>
+                        <h4>Notre-Dame-de-la-Garde</h4>
+                    </div>
             
-                    <li><img class="small" src="P2_Reservia/images_activites/NDDLG_M.jpg" alt="Notre-Dame-de-la-Garde"
-                            title="Notre-Dame-de-la-Garde">
-                        <div>
-                            <h4>Notre-Dame-de-la-Garde</h4>
-                        </div>
-               
                 </li>
              
-                    <li><img class="small" src="P2_Reservia/images_activites/longchamp_M.jpg" alt="Parc Longchamp"
-                            title="Parc Longchamp">
-                        <div>
-                            <h4>Parc Longchamp</h4>
-                        </div>
-                    </li>
+                <li class="small lgp"><img src="P2_Reservia/images_activites/longchamp_M.jpg" alt="Parc Longchamp"
+                        title="Parc Longchamp">
+                    <div>
+                        <h4>Parc Longchamp</h4>
+                    </div>
+                </li>
             
         </ul>
 

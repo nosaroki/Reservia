@@ -1,402 +1,3 @@
-body
-{
-    padding-top: 1.5em;
-    margin: 0px;
-}
-
-
-header, nav, #allfilters, .pointinfo
-{
-    margin-left: 30px;
-}
-    
-
-
-/* HEADER */
-
-header
-{
-display: flex;
-justify-content: space-between;
-}
-
-header>menu
-{
-  float: right;
-  list-style: none;
-  margin: 0;
-  padding: 1em 2em;
-}
-
-header>menu>li
-{
-  float: left;
-}
-
-header>menu>li>a
-{
-  display: block;
-  padding: 1em;
-  color:#0065FC;
-  text-decoration: none;
-}
-
-header>menu>li>a:hover
-{
-  display: block;
-  border-top: 1px solid #0065FC;
-}
-
-html,body 
-{
-  font-family: "Raleway", sans-serif;
-  overflow-x: hidden;
-}
-
-.active>a
-{
-  color: #595959;
-}
-
-body>nav>p
-{
-  color: #595959;
-}
-
-body>nav>div
-{
-    width: fit-content;
-  border-width: 1px;
-  border-color: #E6E6E6;
-  border-style: solid;
-  border-radius: 10px;
-  display: flex;
-}
-
-div>.bouton
-{
-    color: #FFFFFF;
-    border-width: 1px;
-    border-color: #E6E6E6;
-    border-style: solid #0065fc;
-    border-radius: 0px 10px 10px 0px;
-    background-color: #0365FC;
-    text-decoration: none;
-    padding: 19px;
-    padding-top: 21px;
-    margin-left: 61px;
-}
-
-.input_filtre
-{
-    height: 57px;
-    width: 450px;
-}
-
-.input_filtre>span>i
-{
-    line-height:2em;
-    padding: 13px;
-    background-color: #F2F2F2;
-    color: #000;
-    border-radius: 10px 0px 0px 10px;
-}
-.input_filtre>a
-{
-    line-height: 3em;;
-}
-
-.input_filtre>input
-{
-   color: black;
-   border: none;
-   font-weight: bold;
-   font-size: 18px;
-    padding-left: 10px;
-}
-
-/* MAIN RECHERCHE + FILTRES */
-
-#allfilters
-{
-  display:flex;
-}
-
-.textfiltre
-{
-    margin-top: 28px;
-}
-
-.filtres
-{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 75%;
-  align-content: flex-start;
-  margin-left: -30px;
-}
-
-.filtres>li
-{
-    display: flex;
-    align-items: center;
-    border: 1px solid #deebff;
-    border-radius: 2em;
-    margin: 0.5em;
-    font-weight: bold;
-    cursor: pointer;
-
-}
-
-.filtres>li>i
-{
-    padding: 0.5em;
-    color: #0065fc;
-    background-color: #deebff;
-    border: 2px solid #deebff;
-    border-radius:2em;
-}
-
-.filtres>li>span
-{
-    padding: 0 1em;
-}
-
-.pointinfo
-{
-    display: flex;
-    align-items: center; 
-}
-
-.pointinfo i
-{
-    display: block;
-    width: 13px;
-    height: 13px;
-    text-align: center;
-}
-
-.pointinfo>span>i
-{
-    padding: 0.5em;
-    color: #0065FC;
-    border:1px solid #F2F2F2;
-    border-radius: 1em;
-    margin: 0.5em;
-}
-
-.pointinfo>h4
-{
-    font-weight: normal;
-    color: #8a8686;
-}
-
-
-/* HÉBERGEMENTS */
-
-#content
-{
-    display:flex;
-    margin: 2em;
-}
-
-.titrehebergement
-{
-    display: flex;
-    background-color: #F2F2F2;
-    width: 100%;
-}
-
-
-.hebergements_boxes
-{
-    display: flex;
-    list-style: none;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    border-top-right-radius: 10px;
-    justify-content: space-between;
-   width: 70%;
-   flex-wrap: wrap;
-   margin-right: 50px;
-   margin-top: 0px;
-   padding: 2em;
-}
-
-.hebergements_boxes>li
-{
-    background-color: white;
-    border: solid white;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 2px;
-    width: 30%;
-    box-shadow: 0px 0px 6px 3px #d8d7dd;
-    cursor: pointer;
-}
-
-ul.hebergements_boxes>li img
-{
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-    margin: 1px;
-}
-
-.pop
-{
-    float: right;
-}
-
-#lpp
-{
-    display: flex;
-    flex-direction: row;
-}
-
-/* .populaires
-{
-    background-color: #F2F2F2;
-    width: 100%;
-    height: 10%;
-} */
-
-.rightbox
-{
-    width: 30%;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    border-top-right-radius: 10px;
-    justify-content: space-between;
-    padding: 2em;
-}
-
-.rightbox>ul
-{
-    padding: 0px;
-}
-
-
-.lespluspopulaires>li 
-{
-    list-style: none;
-    background-color: white;
-    border: solid white;
-    border-radius: 10px;
-    width: 100%;
-    box-shadow: 0px 0px 6px 3px #d8d7dd;
-    display: flex;
-    margin-bottom: 5.5em;
-    cursor: pointer;
-}
-
-ul.lespluspopulaires>li img
-{
-    width: 100px;
-    border-radius: 10px 0px 0px 10px;
-    margin: 1px;
-}
-
-.contentaside
-{
-    margin-left: 20px;
-}
-
-
-.contentaside>h4
-{
-    margin: 0px;
-    margin-top: 10px;
-}
-.contentaside>p
-{
-    margin-top: 5px;
-    margin-bottom: 30px;
-    font-size: 14px;
-}
-
-/* LES ÉTOILES */
-
-.full
-{
-    color: #0065fc;
-}
-
-.simple
-{
-    color: #F2F2F2;
-}
-
-.showmore
-{
-    display: flex;
-    text-align: left;
-    margin-right: 75%;
-}
-
-/* ACTIVITÉS */
-
-#activites>ul
-{
-    list-style: none;
-    display: flex;
-    flex-flow: column wrap;
-    cursor: pointer;
-    height: 600px;
-    align-content: space-between;
-
-}
-
-#activites>ul>li
-{
-    background-color: white;
-    padding: 5px;
-    margin: 2px;
-    overflow: hidden;
-    width: 20%;
-    border: solid transparent;
-    border-radius: 10px;
-    box-shadow: 3px 3px 4px 0px #d8d7dd;
-    height: 75%;
-    padding: 0px;
-}
-
-#activites>ul>li>img
-{
-    align-content: space-between;
-}
-
-#activites>ul>li>img.small
-{
-    flex-direction: column;
-}
-
-.big 
-{
-    height: 80%;
-} 
-
-.small
-{
-    height: 40%;
-}
-
-.pomegues, .frioul, .nddlg, .longchamp
-{
-    height: 40%;
-}
-
-
-
-/* .vieuxport
-{
-margin: 0px;
-height: 25%;
-} */
-
-
-/* FOOTER */
 
 footer
 {
@@ -409,18 +10,12 @@ footer
 .footerbloc
 {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 0em;
-    margin-left: -12em;
+    padding-top: 1em;
+    margin-left: 2em;
     height: 200px;
 
 }
 
-footer>div>ul>li
-{
-    list-style: none;
-}
 
 .footer_link:hover
 {
@@ -439,12 +34,12 @@ footer>div>ul>li
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-top: 0px;
 }
 
 .hebergements>h3
 {
     margin-top: auto;
+    
 }
 
 .hebergements
@@ -452,6 +47,9 @@ footer>div>ul>li
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    position: relative;
+    bottom: 135px;
+    left: 500px;
 }
 
 .assistance>h3
@@ -464,4 +62,9 @@ footer>div>ul>li
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .footerbloc{display:block;}
 }

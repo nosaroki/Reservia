@@ -1,6 +1,5 @@
 body
 {
-    padding-top: 1.5em;
     margin: 0px;
 }
 
@@ -11,6 +10,11 @@ header, nav, #allfilters, .pointinfo
 }
     
 
+html,body 
+{
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
 
 /* HEADER */
 
@@ -20,12 +24,17 @@ display: flex;
 justify-content: space-between;
 }
 
+.reservia
+{
+    margin-top:1em;
+}
+
 header>menu
 {
   float: right;
   list-style: none;
   margin: 0;
-  padding: 1em 2em;
+  padding: 1em 1em;
 }
 
 header>menu>li
@@ -44,13 +53,16 @@ header>menu>li>a
 header>menu>li>a:hover
 {
   display: block;
-  border-top: 1px solid #0065FC;
+  border-top: 2px solid #0065FC;
 }
 
-html,body 
+@media only screen and (max-width: 500px)
 {
-  font-family: "Raleway", sans-serif;
-  overflow-x: hidden;
+    header{display: block;}
+    header>menu{width:100%; display: flex; justify-content: space-around;}
+    header>menu>li>a:hover{border-bottom: 1px solid #0065FC; border-top:none;}
+    header>menu>li{width:50%; text-align: center;}
+    header>menu>li:last-child{position: absolute; top: 0; right:0; padding-top: 1.5em;}
 }
 
 .active>a
@@ -87,6 +99,11 @@ div>.bouton
     margin-left: 61px;
 }
 
+div>.bouton_min
+{
+    color: white;
+}
+
 .input_filtre
 {
     height: 57px;
@@ -113,6 +130,15 @@ div>.bouton
    font-weight: bold;
    font-size: 18px;
     padding-left: 10px;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .input_filtre{width:300px;height:50px;}
+    .input_filtre>span>i{height:25px;}
+    div>.bouton{margin-left:0;position: absolute;height: 11px; border-radius: 10px; width: 15px;text-indent: -9999px;line-height: 0;}
+    div>.bouton_min{color: white;position: relative;margin-left: 19px;cursor: pointer;}
+
 }
 
 /* MAIN RECHERCHE + FILTRES */
@@ -193,6 +219,20 @@ div>.bouton
     color: #8a8686;
 }
 
+@media only screen and (max-width: 500px)
+{
+   .textfiltre{margin-top:15px; font-size: 22px;}
+   .filtres{display: block; padding-left: 0; position: relative; top: 2.5em;right: 3em;}
+   .eco{width:160px}
+   .fam{width: 120px;}
+   .love{width: 160px}
+   .animals{width:215px; margin-bottom: 20px;}
+}
+
+@media only screen and (max-width: 800px)
+{
+    .filtres{display: block;}
+}
 
 /* HÉBERGEMENTS */
 
@@ -205,8 +245,8 @@ div>.bouton
 .titrehebergement
 {
     display: flex;
-    background-color: #F2F2F2;
     width: 100%;
+    height: 0px;
 }
 
 
@@ -223,6 +263,7 @@ div>.bouton
    margin-right: 50px;
    margin-top: 0px;
    padding: 2em;
+   padding-top: 1em;
 }
 
 .hebergements_boxes>li
@@ -230,10 +271,9 @@ div>.bouton
     background-color: white;
     border: solid white;
     border-radius: 10px;
-    padding: 5px;
-    margin: 2px;
+    height: 25%;
     width: 30%;
-    box-shadow: 0px 0px 6px 3px #d8d7dd;
+    box-shadow: 0px 0px 15px 3px #d8d7dd;
     cursor: pointer;
 }
 
@@ -242,6 +282,48 @@ ul.hebergements_boxes>li img
     width: 100%;
     border-radius: 10px 10px 0px 0px;
     margin: 1px;
+
+    height: 60%;
+    object-fit: cover;
+}
+
+.content_heb
+{
+    margin-top: 5px;
+}
+
+.content_heb>h4
+{
+    margin: 0;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.content_heb>p
+{
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.content_heb>.stars
+{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 500px)
+{
+    #content{display: block; margin: 0px;}
+    .hebergements_boxes{width: 100%; display: block; background-color: white; padding-top: 0;}
+    .hebergements_boxes>li{width: 85%;margin-bottom: 1em; height: 170px;}
+    .rightbox{padding: 0em;}
+    .rightbox>h3{margin:1em;padding-top: 1.5em;}
+    .lespluspopulaires>li{width:85%;margin-bottom:1em;}
+    .showmore{margin-top:1em;}
+
 }
 
 .pop
@@ -270,6 +352,7 @@ ul.hebergements_boxes>li img
     border-top-right-radius: 10px;
     justify-content: space-between;
     padding: 2em;
+    padding-top: 1em;
 }
 
 .rightbox>ul
@@ -287,7 +370,7 @@ ul.hebergements_boxes>li img
     width: 100%;
     box-shadow: 0px 0px 6px 3px #d8d7dd;
     display: flex;
-    margin-bottom: 5.5em;
+    margin-bottom: 2.5em;
     cursor: pointer;
 }
 
@@ -297,6 +380,8 @@ ul.lespluspopulaires>li img
     border-radius: 10px 0px 0px 10px;
     margin: 1px;
 }
+
+
 
 .contentaside
 {
@@ -332,7 +417,18 @@ ul.lespluspopulaires>li img
 {
     display: flex;
     text-align: left;
-    margin-right: 75%;
+    height: 0px; 
+}
+
+.showmore>p
+{
+    height: 0px;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .rightbox{width: 100%;}
+    .lespluspopulaires>li{width: 85%};
 }
 
 /* ACTIVITÉS */
@@ -344,6 +440,16 @@ ul.lespluspopulaires>li img
     border-radius: 10px;
     box-shadow: 0px 0px 6px 3px #d8d7dd; 
 } */
+
+.titreactivites
+{
+    margin-left: 2em;
+}
+
+#activites>ul>li>div>h4
+{
+    margin: 1em;
+}
 
 #activites>ul
 {
@@ -359,10 +465,12 @@ ul.lespluspopulaires>li img
 #activites>ul>li
 {
     background-color: white;
-    padding: 5px;
     margin: 2px;
     overflow: hidden;
     width: 20%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 3px #d8d7dd;
+    margin-bottom: 88px;
 }
 
 #activites>ul>li>img
@@ -372,23 +480,46 @@ ul.lespluspopulaires>li img
 
 .big 
 {
-    height: 80%;
+    height: 90%;
+   
 } 
 
 .small
 {
-    height: 40%;
+    height: 30%;
 }
 
-.pomefrioul
-{
-    width: 20%;
-}
-.pomefrioul>li>img
+.small>img
 {
     width: 100%;
+    height: 80%;
     object-fit: cover;
 }
+
+.small.fort, .small.nddlg
+{
+    height:40%;
+   
+}
+
+.small.frioul>img, .small.lgp>img
+{
+    height: 70%;
+}
+
+.small.frioul
+    margin-top: 2em;
+}
+
+@media only screen and (max-width: 500px)
+{
+    #activites{width:90%}
+    #activites>ul{display: block;}
+    #activites>ul>li{width: 100%; height: 150px}
+    .titreactivites{margin-left: 2em;}
+}
+
+
 
 /* .vieuxport
 {
@@ -440,7 +571,7 @@ footer>div>ul>li
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-top: 0px;
+   
 }
 
 .hebergements>h3
@@ -465,4 +596,15 @@ footer>div>ul>li
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .footerbloc{display:block;flex-direction:column;align-items: normal;justify-content: normal; margin: 0px;margin-top:10em; margin-left: 2em;height: 400px;}
+    .apropos, .hebergements, .assistance{margin-bottom: 1em;}
+}
+
+@media only screen and (max-width: 800px)
+{
+    .footerbloc{margin-left: -2em;}
 }
