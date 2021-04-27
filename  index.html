@@ -38,15 +38,13 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <div class="search_block">
-            <div class="input_filtre">
+        <form>
+            <i class="fas fa-map-marker-alt pin" aria-hidden="true"></i>
+            <input placeholder="Marseille, France" class="city" type="text">
+            <input type="submit" value="Rechercher" class="search">
+            <i class="fas fa-search loupe"></i>
 
-                <span><i class="fas fa-map-marker-alt"></i></span>
-                <input type="" value="" placeholder="Marseille, France" />
-                <a href="" class="bouton">Rechercher</a>
-                <a href="" class="bouton_min"><i class="fas fa-search"></i></a>
-            </div>
-        </div>
+        </form>
 
     </nav>
 
@@ -92,6 +90,67 @@
 
     <div id="content">
 
+
+        <aside class="rightbox">
+
+            <!-- <div class="populaires"> -->
+            <h3>Les plus populaires <i class="fas fa-chart-line pop"></i></h3>
+            <!--                
+            </div> -->
+
+
+
+            <ul class="lespluspopulaires">
+
+                <li><img src="P2_Reservia/images_hebergements/S/hotellesoleildumatin.jpg" alt="Hôtel Le Soleil du matin"
+                        title="Hôtel le soleil du matin">
+                    <div>
+                        <div class="contentaside">
+                            <h4>Hôtel Le soleil du matin</h4>
+                            <p>Nuit à partir de <strong>128€</strong></p>
+
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+
+                        </div>
+                </li>
+                <li><img src="P2_Reservia/images_hebergements/S/aucoeurdeleau.jpg"
+                        alt="Au coeur de l'eau Chambres d'hôtes" title="Au coeur de l'eau">
+                    <div>
+                        <div class="contentaside">
+                            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                            <p>Nuit à partir de <strong>71€</strong></p>
+
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star simple"></i>
+
+                        </div>
+                </li>
+                <li><img src="P2_Reservia/images_hebergements/S/toutblancetbleu.jpg" alt="Hôtel tout bleu et blanc"
+                        title="Hôtel tout bleu et blanc" class="tbtb">
+                    <div>
+                        <div class="contentaside">
+                            <h4>Hôtel tout blanc tout bleu</h4>
+                            <p>Nuit à partir de <strong>68€</strong></p>
+
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star full"></i>
+                            <i class="fas fa-star simple"></i>
+
+                        </div>
+                </li>
+            </ul>
+
+        </aside>
+
         <ul class="hebergements_boxes">
 
             <div class="titrehebergement">
@@ -103,7 +162,7 @@
                 <div class="content_heb">
                     <h4>Auberge de la Cannebière</h4>
                     <p>Nuit à partir de <strong>25€</strong></p>
-                    
+
                     <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
@@ -119,7 +178,7 @@
                 <div class="content_heb">
                     <h4>Hôtel du port</h4>
                     <p>Nuit à partir de <strong>52€</strong></p>
-                    
+
                     <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
@@ -135,14 +194,14 @@
                 <div class="content_heb">
                     <h4>Hôtel Les mouettes</h4>
                     <p>Nuit à partir de <strong>76€</strong></p>
-                    
+
                     <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star simple"></i>
-                   </div>
+                    </div>
                 </div>
             </li>
 
@@ -151,7 +210,7 @@
                 <div class="content_heb">
                     <h4>Hôtel de la mer</h4>
                     <p>Nuit à partir de <strong>46€</strong></p>
-                    
+
                     <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
@@ -166,7 +225,7 @@
                 <div class="content_heb">
                     <h4>Auberge Le Panier</h4>
                     <p>Nuit à partir de <strong>23€</strong></p>
-                    
+
                     <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
@@ -176,12 +235,12 @@
                     </div>
                 </div>
             </li>
-            <li><img src="P2_Reservia/images_hebergements/S/chezamina.jpg" alt="Hôtel chez Amina"
+            <li><img src="P2_Reservia/images_hebergements/M/chezamina.jpg" alt="Hôtel chez Amina"
                     title="Hôtel chez Amina" height="150px">
                 <div class="content_heb">
                     <h4>Hôtel chez Amina</h4>
                     <p>Nuit à partir de <strong>96€</strong></p>
-                    
+
                     <div class="stars">
                         <i class="fas fa-star full"></i>
                         <i class="fas fa-star full"></i>
@@ -197,68 +256,6 @@
             </div>
 
         </ul>
-
-
-        <aside class="rightbox">
-
-            <!-- <div class="populaires"> -->
-            <h3>Les plus populaires <i class="fas fa-chart-line pop"></i></h3>
-            <!--                
-            </div> -->
-
-            <span></span>
-
-            <ul class="lespluspopulaires">
-
-                <li><img src="P2_Reservia/images_hebergements/S/hotellesoleildumatin.jpg" alt="Hôtel Le Soleil du matin"
-                        title="Hôtel le soleil du matin">
-                    <div>
-                        <div class="contentaside">
-                            <h4>Hôtel Le soleil du matin</h4>
-                            <p>Nuit à partir de <strong>128€</strong></p>
-                        
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                        
-                    </div>
-                </li>
-                <li><img src="P2_Reservia/images_hebergements/S/aucoeurdeleau.jpg"
-                        alt="Au coeur de l'eau Chambres d'hôtes" title="Au coeur de l'eau">
-                    <div>
-                        <div class="contentaside">
-                            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                            <p>Nuit à partir de <strong>71€</strong></p>
-                    
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star simple"></i>
-                        
-                    </div>
-                </li>
-                <li><img src="P2_Reservia/images_hebergements/S/toutblancetbleu.jpg" alt="Hôtel tout bleu et blanc"
-                        title="Hôtel tout bleu et blanc">
-                    <div>
-                        <div class="contentaside">
-                            <h4>Hôtel tout blanc tout bleu</h4>
-                            <p>Nuit à partir de <strong>68€</strong></p>
-                       
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star full"></i>
-                            <i class="fas fa-star simple"></i>
-                       
-                    </div>
-                </li>
-            </ul>
-
-        </aside>
-
     </div>
 
     <!-- ACTIVITÉS -->
@@ -271,57 +268,52 @@
 
 
         <ul>
-          
-                <li><img class="big" src="P2_Reservia/images_activites/vieuxport_M.jpg" alt="Vieux Port"
-                        title="Le Vieux Port de Marseille">
-                    <div>
-                        <h4>Vieux Port</h4>
-                    </div>
-                </li>
 
-                <li class="small fort"><img src="P2_Reservia/images_activites/pomegues_M.jpg" alt="Fort de Pomègues"
-                            title="Fort de Pomègues">
-                        <div>
-                            <h4>Fort de Pomègues</h4>
-                       </div>
-                </li>
+            <li><img class="big" src="P2_Reservia/images_activites/vieuxport_M.jpg" alt="Vieux Port"
+                    title="Le Vieux Port de Marseille">
+                <div>
+                    <h4>Vieux Port</h4>
+                </div>
+            </li>
 
-                
-                <li class="small frioul"><img src="P2_Reservia/images_activites/frioul_M.jpg" alt="Îles du Frioul"
-                        title="Îles du Frioul">
-                    <div>
-                        <h4>Îles du Frioul</h4>
-                    </div>
-                </li>
-                
-          
-                <li><img class="big" src="P2_Reservia/images_activites/calanques_M.jpg" alt="Parc National des Calanques"
-                        title="Parc National des Calanques">
-                    <div>
-                        <h4>Parc National des calanques</h4>
-                    </div>
-                </li>
-            
+            <li class="small fort"><img src="P2_Reservia/images_activites/pomegues_M.jpg" alt="Fort de Pomègues"
+                    title="Fort de Pomègues" class="fort">
+                <div>
+                    <h4>Fort de Pomègues</h4>
+                </div>
+            </li>
 
-<!-- JAI CHANGER LA CLASSE small, 
-    je l'ai mis sur le <li/> au lieu de l'image, 
-    etjai mis 100% au lieu de ce que tu avcais défini(40%) 
--->
-                <li class="small nddlg"><img src="P2_Reservia/images_activites/NDDLG_M.jpg" alt="Notre-Dame-de-la-Garde"
-                        title="Notre-Dame-de-la-Garde">
-                    <div>
-                        <h4>Notre-Dame-de-la-Garde</h4>
-                    </div>
-            
-                </li>
-             
-                <li class="small lgp"><img src="P2_Reservia/images_activites/longchamp_M.jpg" alt="Parc Longchamp"
-                        title="Parc Longchamp">
-                    <div>
-                        <h4>Parc Longchamp</h4>
-                    </div>
-                </li>
-            
+
+            <li class="small frioul"><img src="P2_Reservia/images_activites/frioul_M.jpg" alt="Îles du Frioul"
+                    title="Îles du Frioul">
+                <div>
+                    <h4>Îles du Frioul</h4>
+                </div>
+            </li>
+
+
+            <li><img class="big" src="P2_Reservia/images_activites/calanques_M.jpg" alt="Parc National des Calanques"
+                    title="Parc National des Calanques">
+                <div>
+                    <h4>Parc National des calanques</h4>
+                </div>
+            </li>
+
+            <li class="small nddlg"><img src="P2_Reservia/images_activites/NDDLG_M.jpg" alt="Notre-Dame-de-la-Garde"
+                    title="Notre-Dame-de-la-Garde" class="nddlg">
+                <div>
+                    <h4>Notre-Dame-de-la-Garde</h4>
+                </div>
+
+            </li>
+
+            <li class="small lgp"><img src="P2_Reservia/images_activites/longchamp_M.jpg" alt="Parc Longchamp"
+                    title="Parc Longchamp" class="lgp">
+                <div>
+                    <h4>Parc Longchamp</h4>
+                </div>
+            </li>
+
         </ul>
 
 
