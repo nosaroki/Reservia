@@ -473,7 +473,7 @@ ul.lespluspopulaires > li img {
   flex-flow: column wrap;
   cursor: pointer;
   height: 600px;
-  align-content: space-between;
+  align-content: space-around;
 }
 
 #activites > ul > li {
