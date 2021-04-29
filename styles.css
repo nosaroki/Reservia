@@ -487,9 +487,11 @@ ul.lespluspopulaires > li img {
     #content{display: flex;flex-direction: column;}
     .rightbox{order: 1; width: 70%; margin-left: 4em; margin-bottom: 2em;}
     .hebergements_boxes{order: 2; margin-left: 4em;}
-    ul.hebergements_boxes > li img{height:unset}
+    .hebergements_boxes > li {width: unset; margin-bottom:2em;}
+    ul.hebergements_boxes > li img{height:10em;}
     #titrehebergement{height: 4em;}
     .tbtb{height: 6em;}
+    .showmore{height:unset;}
 }
 
 /* ACTIVITÉS */
