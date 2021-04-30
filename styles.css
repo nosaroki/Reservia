@@ -282,16 +282,16 @@ form>.loupe{
   }
   .textfiltre{margin-bottom: 0px;}
   .eco {
-    width: 160px;
+    width: 170px;
   }
   .fam {
-    width: 120px;
+    width: 130px;
   }
   .love {
-    width: 160px;
+    width: 170px;
   }
   .animals {
-    width: 215px;
+    width: 220px;
     margin-bottom: 20px;
   }
 }
@@ -323,16 +323,18 @@ form>.loupe{
   padding: 2em;
   padding-top: 1em;
   order: 1;
+  max-height:33.5em;
 }
 
 .hebergements_boxes > li {
   background-color: white;
   border: solid white;
   border-radius: 10px;
-  height: 25%;
+  height: 35%;
   width: 30%;
   box-shadow: 0px 0px 15px 3px #d8d7dd;
   cursor: pointer;
+  margin-top: 2.5em;
 }
 
 ul.hebergements_boxes > li img {
@@ -377,6 +379,7 @@ ul.hebergements_boxes > li img {
     display: block;
     background-color: white;
     padding-top: 0;
+    max-height:fit-content;
   }
   .hebergements_boxes > li {
     width: 85%;
@@ -500,12 +503,12 @@ ul.lespluspopulaires > li img {
 @media only screen and (min-width: 501px) and (max-width: 800px){
     #content{display: flex;flex-direction: column;}
     .rightbox{order: 1; width: 70%; margin-left: 4em; margin-bottom: 2em;}
-    .hebergements_boxes{order: 2; margin-left: 4em;}
-    .hebergements_boxes > li {width: unset; margin-bottom:2em;}
+    .hebergements_boxes{order: 2; margin-left: 4em;max-height:fit-content;}
+    .hebergements_boxes > li {width: unset; margin-bottom: unset;}
     ul.hebergements_boxes > li img{height:10em;}
-    #titrehebergement{height: 4em;}
+    #titrehebergement{height: 1em;}
     .tbtb{height: 6em;}
-    .showmore{height:unset;}
+    .showmore{height:unset; margin-top: 1em;}
 }
 
 /* ACTIVITÉS */
