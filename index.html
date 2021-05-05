@@ -10,8 +10,8 @@
 
     <title>OpenClassrooms Projet 2</title>
 
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="prefixer.css">
+    <!-- <link rel="stylesheet" href="style-develop.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/71444e5b5d.js" crossorigin="anonymous"></script>
 
@@ -42,9 +42,9 @@
         <form>
             <i class="fas fa-map-marker-alt pin" aria-hidden="true"></i>
             <input placeholder="Marseille, France" class="city" type="text">
-            <input type="submit" value="Rechercher" class="search">
-            <i class="fas fa-search loupe"></i>
-
+            <button class="search">
+                <i class="fas fa-search loupe"></i>
+            </button>
         </form>
 
     </nav>
@@ -101,7 +101,7 @@
             <ul class="lespluspopulaires">
 
                 <li><img src="P2_Reservia/images_hebergements/S/hotellesoleildumatin.jpg" alt="Hôtel Le Soleil du matin"
-                        title="Hôtel le soleil du matin">
+                        title="Hôtel le soleil du matin" height="150">
                 
                         <div class="contentaside">
                             <h4>Hôtel Le soleil du matin</h4>
@@ -112,11 +112,11 @@
                             <i class="fas fa-star full"></i>
                             <i class="fas fa-star full"></i>
                             <i class="fas fa-star full"></i>
-
+ 
                         </div>
                 </li>
                 <li><img src="P2_Reservia/images_hebergements/S/aucoeurdeleau.jpg"
-                        alt="Au coeur de l'eau Chambres d'hôtes" title="Au coeur de l'eau">
+                        alt="Au coeur de l'eau Chambres d'hôtes" title="Au coeur de l'eau" height="150">
                   
                         <div class="contentaside">
                             <h4>Au coeur de l'eau Chambres d'hôtes</h4>
@@ -131,7 +131,7 @@
                         </div>
                 </li>
                 <li><img src="P2_Reservia/images_hebergements/S/toutblancetbleu.jpg" alt="Hôtel tout bleu et blanc"
-                        title="Hôtel tout bleu et blanc" class="tbtb">
+                        title="Hôtel tout bleu et blanc" class="tbtb" height="150">
                  
                         <div class="contentaside">
                             <h4>Hôtel tout blanc tout bleu</h4>
@@ -151,12 +151,12 @@
 
         <ul class="hebergements_boxes">
 
-            <div id="titrehebergement">
+            <li id="titrehebergement">
                 <h3>Hébergements à Marseille</h3>
-            </div>
+            </li>
 
             <li><img src="P2_Reservia/images_hebergements/S/aubergedelacannebiere.jpg" alt="Auberge de la cannebière"
-                    title=" Photo de l'Auberge de la cannebière">
+                    title=" Photo de l'Auberge de la cannebière"  height="125">
                 <div class="content_heb">
                     <h4>Auberge de la Cannebière</h4>
                     <p>Nuit à partir de <strong>25€</strong></p>
@@ -171,7 +171,8 @@
                 </div>
             </li>
 
-            <li><img src="P2_Reservia/images_hebergements/S/hotelduport.jpg" alt="Hôtel du port" title="Hôtel du port">
+            <li><img src="P2_Reservia/images_hebergements/S/hotelduport.jpg" alt="Hôtel du port" 
+                title="Hôtel du port" height="125">
                 <div class="content_heb">
                     <h4>Hôtel du port</h4>
                     <p>Nuit à partir de <strong>52€</strong></p>
@@ -187,7 +188,7 @@
             </li>
 
             <li><img src="P2_Reservia/images_hebergements/S/hotellesmouettes.jpg" alt="Hôtel les mouettes"
-                    title="Hôtel les mouettes">
+                    title="Hôtel les mouettes"  height="125">
                 <div class="content_heb">
                     <h4>Hôtel Les mouettes</h4>
                     <p>Nuit à partir de <strong>76€</strong></p>
@@ -203,7 +204,7 @@
             </li>
 
             <li><img src="P2_Reservia/images_hebergements/S/hoteldelamer.jpg" alt="Hôtel de la mer"
-                    title="Hôtel de la mer">
+                    title="Hôtel de la mer"  height="125">
                 <div class="content_heb">
                     <h4>Hôtel de la mer</h4>
                     <p>Nuit à partir de <strong>46€</strong></p>
@@ -218,7 +219,7 @@
                 </div>
             </li>
             <li><img src="P2_Reservia/images_hebergements/S/aubergelepanier.jpg" alt="Auberge le panier"
-                    title="Auberge le panier">
+                    title="Auberge le panier"  height="125">
                 <div class="content_heb">
                     <h4>Auberge Le Panier</h4>
                     <p>Nuit à partir de <strong>23€</strong></p>
@@ -233,7 +234,7 @@
                 </div>
             </li>
             <li><img src="P2_Reservia/images_hebergements/M/chezamina.jpg" alt="Hôtel chez Amina"
-                    title="Hôtel chez Amina">
+                    title="Hôtel chez Amina" height="125">
                 <div class="content_heb">
                     <h4>Hôtel chez Amina</h4>
                     <p>Nuit à partir de <strong>96€</strong></p>
@@ -248,9 +249,9 @@
                 </div>
             </li>
 
-            <div class="showmore">
+            <li class="showmore">
                 <p><strong>Afficher plus</strong></p>
-            </div>
+            </li>
 
         </ul>
     </div>
