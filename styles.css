@@ -303,7 +303,7 @@ form>.loupe{
   margin: 2em;
 }
 
-#titrehebergement {
+h3 {
   display: flex;
   width: 100%;
   height: 0px;
