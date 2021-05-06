@@ -161,7 +161,7 @@ form>.loupe{
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 800px)
+@media only screen and (min-width: 551px) and (max-width: 800px)
 {
     body > nav > form >.city {
         width: 26%;
@@ -276,7 +276,7 @@ form>.loupe{
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 800px){ 
+@media only screen and (min-width: 551px) and (max-width: 800px){ 
   .filtres {
     display: block;
   }
@@ -303,47 +303,58 @@ form>.loupe{
   margin: 2em;
 }
 
-li>#titrehebergement {
+li#titrehebergement, #content .showmore {
+  position: absolute;
+  top: 1em;
+  width: unset;
+  height: unset;
+  background: none;
+  box-shadow: none;
+  border: none;
+ }
+
+ #content .showmore {
+  top:unset;
+  bottom:2em;}
+
+#titrehebergement {
   display: flex;
   width: 100%;
-  height: 0px;
 }
 
 .hebergements_boxes {
   display: flex;
+  position:relative;
   list-style: none;
   background-color: #f2f2f2;
   border-radius: 10px;
   border-top-right-radius: 10px;
   justify-content: space-between;
+  align-content: space-between;
   width: 70%;
   flex-wrap: wrap;
+  margin: 0px;
   margin-right: 50px;
-  margin-top: 0px;
-  padding: 2em;
-  padding-top: 1em;
+  padding: 5em 2em;
   order: 1;
-  max-height:33.5em;
 }
 
 .hebergements_boxes > li {
   background-color: white;
   border: solid white;
   border-radius: 10px;
-  height: 35%;
+  height: 200px;
   width: 30%;
   box-shadow: 0px 0px 15px 3px #d8d7dd;
   cursor: pointer;
-  margin-top: 2.5em;
 }
 
 ul.hebergements_boxes > li img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   margin: 1px;
-
-  height: 60%;
   object-fit: cover;
+  height: 63%;
 }
 
 .content_heb {
@@ -378,16 +389,15 @@ ul.hebergements_boxes > li img {
     width: 100%;
     display: block;
     background-color: white;
-    padding-top: 0;
     max-height:fit-content;
+    padding-left: 1.5em;
   }
   .hebergements_boxes > li {
     width: 85%;
     margin-bottom: 1em;
-    height: 170px;
   }
   .rightbox {
-    padding: 0em;
+    padding: 1em, 0em;
   }
   #titrehebergement {
     display: block;
@@ -495,19 +505,18 @@ ul.lespluspopulaires > li img {
   .rightbox {
     width: 100%;
   }
-  .lespluspopulaires > li {
+ .lespluspopulaires > li {
     width: 85%;
-  }
+    }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 800px){
+@media only screen and (min-width: 551px) and (max-width: 800px){
     #content{display: flex;flex-direction: column;}
     .rightbox{order: 1; width: 70%; margin-left: 4em; margin-bottom: 2em;}
     .hebergements_boxes{order: 2; margin-left: 4em;max-height:fit-content;}
-    .hebergements_boxes > li {width: unset; margin-bottom: unset;}
+    .hebergements_boxes > li {width: unset; margin-bottom: unset;margin-bottom:1em;height:25%}
     ul.hebergements_boxes > li img{height:10em;}
     #titrehebergement{height: 1em;}
-    .tbtb{height: 6em;}
     .showmore{height:unset; margin-top: 1em;}
 }
 
@@ -598,7 +607,7 @@ ul.lespluspopulaires > li img {
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 800px){
+@media only screen and (min-width: 551px) and (max-width: 800px){
   #titreactivites{text-align: center;}  
   #activites > ul {align-content: space-evenly; margin-left:2em;}
     #activites > ul > li > div > h4{font-size: 13px; text-align:center;}
@@ -691,6 +700,6 @@ footer > div > ul > li {
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 800px) {
+@media only screen and (min-width: 551px) and (max-width: 800px) {
   .footerbloc{margin-left: 0em;}
 }
