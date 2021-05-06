@@ -536,7 +536,6 @@ ul.lespluspopulaires > li img {
   list-style: none;
   display: flex;
   flex-flow: column wrap;
-  cursor: pointer;
   height: 600px;
   align-content: space-around;
 }
@@ -549,6 +548,7 @@ ul.lespluspopulaires > li img {
   border-radius: 10px;
   box-shadow: 0px 0px 6px 3px #d8d7dd;
   margin-bottom: 88px;
+  cursor: pointer;
 }
 
 #activites > ul > li > img {
