@@ -343,7 +343,7 @@ li#titrehebergement, #content .showmore {
   background-color: white;
   border: solid white;
   border-radius: 10px;
-  height: 200px;
+  height: 190px;
   width: 30%;
   box-shadow: 0px 0px 15px 3px #d8d7dd;
   cursor: pointer;
@@ -633,21 +633,15 @@ footer {
 }
 
 .footerbloc {
+  width:75%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0em;
-  margin-left: -12em;
   height: 200px;
-}
-
-footer > div > ul > li {
-  list-style: none;
 }
 
 .footer_link:hover {
   color: #0065fc;
- 
 }
 
 .footer_link {
@@ -662,24 +656,18 @@ footer > div > ul > li {
   flex-direction: column;
 }
 
-.hebergements > h3 {
-  margin-top: auto;
-}
-
 .hebergements {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-
-.assistance > h3 {
-  margin-top: auto;
+  margin-bottom: 2em;
 }
 
 .assistance {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 2em;
 }
 
 @media only screen and (max-width: 500px) {
@@ -691,7 +679,7 @@ footer > div > ul > li {
     margin: 0px;
     margin-top: 10em;
     margin-left: 2em;
-    height: 400px;
+    height: 430px;
   }
   .apropos,
   .hebergements,
@@ -701,5 +689,7 @@ footer > div > ul > li {
 }
 
 @media only screen and (min-width: 551px) and (max-width: 800px) {
-  .footerbloc{margin-left: 0em;}
+  .footerbloc{
+    width:100%;
+  justify-content: space-evenly ;}
 }
