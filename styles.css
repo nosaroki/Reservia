@@ -501,6 +501,7 @@ ul.lespluspopulaires > li img {
   height: 0px;
 }
 
+
 @media only screen and (max-width: 500px) {
   .rightbox {
     width: 100%;
@@ -508,6 +509,16 @@ ul.lespluspopulaires > li img {
  .lespluspopulaires > li {
     width: 85%;
     }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 550px){
+  #content{display: flex;flex-direction: column;}
+  .rightbox{order: 1; width: 70%; margin-left: 4em; margin-bottom: 2em;}
+  .hebergements_boxes{order: 2; margin-left: 4em;max-height:fit-content;}
+  .hebergements_boxes > li {width: unset; margin-bottom: unset;margin-bottom:1em;height:25%}
+  ul.hebergements_boxes > li img{height:10em;}
+  #titrehebergement{height: 1em;}
+  .showmore{height:unset; margin-top: 1em;}
 }
 
 @media only screen and (min-width: 551px) and (max-width: 800px){
@@ -520,6 +531,16 @@ ul.lespluspopulaires > li img {
     .showmore{height:unset; margin-top: 1em;}
 }
 
+@media only screen and (min-width: 801px) and (max-width: 1183px) {
+  #content{display: flex;flex-direction: column;}
+  .rightbox{order: 1; width: 70%; margin-left: 4em; margin-bottom: 2em;}
+  .hebergements_boxes{order: 2; margin-left: 4em;max-height:fit-content;}
+  .hebergements_boxes > li {width: unset; margin-bottom: unset;margin-bottom:1em;height:25%}
+  ul.hebergements_boxes > li img{height:10em;}
+  #titrehebergement{height: 1em;}
+  .showmore{height:unset; margin-top: 1em;}
+}
+
 /* ACTIVITÉS */
 
 #titreactivites {
@@ -530,6 +551,7 @@ ul.lespluspopulaires > li img {
 
 #activites > ul > li > div > h4 {
   margin: 1em;
+  
 }
 
 #activites > ul {
