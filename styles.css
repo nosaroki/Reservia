@@ -515,7 +515,7 @@ ul.lespluspopulaires > li img {
   #content{display: flex;flex-direction: column;}
   .rightbox{order: 1; width: 70%; margin-left: 4em; margin-bottom: 2em;}
   .hebergements_boxes{order: 2; margin-left: 4em;max-height:fit-content;}
-  .hebergements_boxes > li {width: unset; margin-bottom: unset;margin-bottom:1em;height:25%}
+  .hebergements_boxes > li {width: 100%; margin-bottom: unset;margin-bottom:1em;height:25%}
   ul.hebergements_boxes > li img{height:10em;}
   #titrehebergement{height: 1em;}
   .showmore{height:unset; margin-top: 1em;}
@@ -525,7 +525,7 @@ ul.lespluspopulaires > li img {
     #content{display: flex;flex-direction: column;}
     .rightbox{order: 1; width: 70%; margin-left: 4em; margin-bottom: 2em;}
     .hebergements_boxes{order: 2; margin-left: 4em;max-height:fit-content;}
-    .hebergements_boxes > li {width: unset; margin-bottom: unset;margin-bottom:1em;height:25%}
+    .hebergements_boxes > li {width: 100%; margin-bottom: unset;margin-bottom:1em;height:25%}
     ul.hebergements_boxes > li img{height:10em;}
     #titrehebergement{height: 1em;}
     .showmore{height:unset; margin-top: 1em;}
@@ -535,7 +535,7 @@ ul.lespluspopulaires > li img {
   #content{display: flex;flex-direction: column;}
   .rightbox{order: 1; width: 70%; margin-left: 4em; margin-bottom: 2em;}
   .hebergements_boxes{order: 2; margin-left: 4em;max-height:fit-content;}
-  .hebergements_boxes > li {width: unset; margin-bottom: unset;margin-bottom:1em;height:25%}
+  .hebergements_boxes > li {width: 100%; margin-bottom: unset;margin-bottom:1em;height:25%}
   ul.hebergements_boxes > li img{height:10em;}
   #titrehebergement{height: 1em;}
   .showmore{height:unset; margin-top: 1em;}
@@ -550,8 +550,8 @@ ul.lespluspopulaires > li img {
 }
 
 #activites > ul > li > div > h4 {
-  margin: 1em;
-  
+  padding: 0.5em 1rem;
+  margin: unset;
 }
 
 #activites > ul {
