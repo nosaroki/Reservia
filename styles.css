@@ -1,5 +1,6 @@
 body {
-  margin: 0px;
+  margin: auto;
+  max-width:1500px;
 }
 
 header,
@@ -397,7 +398,7 @@ ul.hebergements_boxes > li img {
     margin-bottom: 1em;
   }
   .rightbox {
-    padding: 1em, 0em;
+    padding: 1em 0em;
   }
   #titrehebergement {
     display: block;
